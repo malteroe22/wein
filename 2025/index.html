@@ -30,7 +30,8 @@
     }
 
     .container {
-      max-width: 700px;
+      max-width: 900px;
+      width: 100%;
     }
 
     h2 {
@@ -58,8 +59,30 @@
       opacity: 0.7;
     }
 
+    /* Zwei Spalten */
+    .columns {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 260px;
+      max-width: 350px;
+    }
+
+    .col h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
     .nutrition {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.6;
       white-space: pre-line;
       opacity: 0.95;
@@ -67,7 +90,7 @@
     }
 
     .footer {
-      margin-top: 40px;
+      margin-top: 20px;
       font-size: 1rem;
       opacity: 0.85;
       font-style: normal;
@@ -79,11 +102,16 @@
   <div class="container">
 
     <h2>Nährwertangaben</h2>
-    <h1>Röckles Wengert – Weißwein 2023</h1>
+    <h1>Röckles Wengert</h1>
 
     <div class="divider"></div>
 
-    <div class="nutrition">
+    <div class="columns">
+
+      <!-- Spalte 1: Schiller -->
+      <div class="col">
+        <h3>Schiller</h3>
+        <div class="nutrition">
 Brennwert:        293 kJ / 70 kcal
 Fett:             0 g
 davon gesättigt:  0 g
@@ -91,6 +119,23 @@ Kohlenhydrate:    2,6 g
 davon Zucker:     2,6 g
 Eiweiß:           0,1 g
 Salz:             0 g
+        </div>
+      </div>
+
+      <!-- Spalte 2: Weißwein -->
+      <div class="col">
+        <h3>Weißwein</h3>
+        <div class="nutrition">
+Brennwert:        293 kJ / 70 kcal
+Fett:             0 g
+davon gesättigt:  0 g
+Kohlenhydrate:    2,6 g
+davon Zucker:     2,6 g
+Eiweiß:           0,1 g
+Salz:             0 g
+        </div>
+      </div>
+
     </div>
 
     <div class="footer">
