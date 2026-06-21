@@ -33,20 +33,21 @@
       max-width: 700px;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 700; /* BOLD */
-      margin-bottom: 6px;
-      letter-spacing: 0.5px;
-    }
-
     h2 {
       font-size: 1.2rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       opacity: 0.9;
       margin-bottom: 24px;
-      font-style: italic;
+      font-style: normal;   /* NICHT kursiv */
+      font-weight: 400;     /* NICHT fett */
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;     /* FETT */
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
     }
 
     .divider {
@@ -58,10 +59,10 @@
     }
 
     .quote {
-      font-size: 1.5rem;
+      font-size: 1.1rem;     /* deutlich kleiner */
       line-height: 1.45;
-      font-style: italic; /* alles kursiv */
-      white-space: pre-line;
+      font-style: italic;    /* kursiv */
+      white-space: pre-line; /* Einrückung & Zeilen exakt übernehmen */
       opacity: 0.95;
     }
 
@@ -82,8 +83,11 @@
     <div class="divider"></div>
 
     <div class="quote">
-Sag emmer ja zu dreißig Minuda und ma Vierdele mit ma Fraind,
-weil die oinahalb Stond kennded die beschde fenf Stond Deines Läbens werda.
+Sag emmer ja zu dreißig Minuda
+und ma Vierdele mit gude Freind,
+weil die oinahalb Stond kennded
+die beschde fenf Stond von Deim
+Läbens werda.
 
 You should always say yes to a
 quick 30 minute drink with friends,
